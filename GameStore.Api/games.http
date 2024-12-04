@@ -1,0 +1,29 @@
+GET http://localhost:5278/games
+
+###
+GET http://localhost:5278/games/5
+###
+POST http://localhost:5278/games
+Content-Type: application/json
+
+{
+    //"name":"Minecraft",
+    "genre":"Kids",
+    "price":60,
+    "releaseDate":"2011-11-18"
+}
+
+###
+PUT http://localhost:5278/games/
+Content-Type: application/json
+
+{
+  "name": "Street Fighter II rise",
+    "genre": "Fighting",
+    "price": 19.99,
+    "releaseDate": "1992-07-15"
+
+}
+
+###
+DELETE http://localhost:5278/games/2
